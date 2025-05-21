@@ -1,0 +1,463 @@
+/* ---------- Fonts and general setup ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'a_atmosphericregular';
+    src: url('../fonts/atmospheric-rg4al-webfont.woff2') format('woff2'),
+         url('../fonts/atmospheric-rg4al-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----------- Header and navigation ----------- */
+.company_logo{
+    font-family: 'a_atmosphericregular';
+    font-weight: 100;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.header-div{
+    position: relative;
+} 
+
+body{
+    font-family: 'Roboto', sans-serif!important;
+}
+
+.hidden-in-desktop{
+    display: none;
+}
+
+.navbar{
+    background-color:rgba(0,0,0,.2);
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+#company-name{
+    display:none;
+    font-family: 'a_atmosphericregular';
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 5.5rem;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#company-tec{
+    display: none;
+    font-family: 'a_atmosphericregular';
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 4.2rem;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* ------------bouncing icons----------- */
+
+.bounce {
+    position: absolute;
+    left:50%;
+    bottom:0;
+    margin-top:-25px;
+    margin-left:-25px;
+    height:50px;
+    width:50px;
+    background: url('../images/Arrow.png');
+    background-size: 100% auto;
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+  }
+  
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+
+
+/* ----------------- Footer ------------------ */
+
+.page-footer,.top-nav-collapse{
+    background-color:#1C2331;
+}
+
+.copyright-footer{
+    color: #fff;
+    text-align: center;
+}
+
+.social-icon{
+    padding: 2px;
+}
+
+/* --------------- Page Images --------------- */
+
+.parallax {
+    /* Set a specific height */
+    min-height: 100vh; 
+    background-image: url('../images/bridge.jpg');
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.juke-logo{
+    padding-top: 5px;
+    width: 5%;
+    padding-right: 15px;
+}
+
+.android-logo{
+    padding-top: 5px;
+    width: 12%;
+    padding-right: 10px;
+}
+
+.python-logo{
+    margin-top: 20px;
+    width: 22%;
+}
+
+.image-row{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* -------------- Consultants --------------*/
+
+.linkedin-icons{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.consult-image{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.consultant-row{
+    text-align: center;
+    box-shadow: 5px 5px 10px 0px gray;
+    margin-top: 30px;
+}
+
+.consult-name{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgba(0,0,0,.8);
+}
+
+.consultant-text{
+    padding: 25px;
+    padding-top: 30px;
+    text-align: left;
+}
+
+.consult-name-image{
+    padding-top: 50px!important;
+    padding-left: 50px!important;
+}
+
+.consult-hover:hover{
+    text-decoration: none;
+    color: rgba(0,0,0,.2);
+}
+
+.meet_the_team{
+    font-size: 1.3rem;
+}
+
+/* ------------------ Apps -------------------*/
+
+.card{
+    min-height: 530px!important;
+    box-shadow: 5px 5px 10px 0px gray!important;
+}
+
+.card-img-top{
+    margin-top: 10px!important;
+    width: 80%!important;
+    margin: 0 auto;
+    border-radius:10%!important;
+}
+
+.card-title{
+    font-size: 1.2rem!important;
+}
+
+/* ----------------- Websites -----------------*/
+
+.card-websites{
+    min-height: 420px!important;
+    margin-top: 20px;
+}
+
+.card-websites:hover{
+    border: 1px solid gray;
+    box-shadow: 0px 0px 0px 0px!important;
+}
+
+a:hover{
+    text-decoration: none!important;
+}
+
+.card-title,
+.card-text{
+    color: #000;
+}
+
+.website-subheading{
+    text-align: center;
+    text-transform: capitalize;
+    display: none;
+}
+
+/* -------------- Consent Cookie --------------*/
+
+#consent-popup{
+    visibility: visible;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 1rem;
+    color: white;
+    background-color: #000;
+    transition: opacity 1s ease;
+}
+
+#consent-text{
+    font-size: 1.0rem!important;
+}
+
+#accept{
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+    height: 0px;
+    width: 0px;
+}
+
+/* ------------------- Media Queries -----------------*/
+
+@media only screen and (max-width: 1440px){
+    #company-name{
+        font-size: 4.5rem;
+    }
+    #company-tec{
+        font-size: 3.5rem;
+        padding-top: 17%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    
+    #company-tec{
+        font-size: 3.5rem;
+        padding-top: 18%;
+    }
+    .consult-name-image{
+        padding-top: 50px;
+    }    
+}
+
+@media (min-width: 800px) and (max-width: 982px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331!important;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .breakline-hide-in-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        background-color:#1C2331;
+    }
+    #company-name{
+        font-size: 4rem;
+        padding-top: 20%;
+    }
+    #company-tec{
+        font-size: 3rem;
+        padding-top: 30%;
+    }
+    .navbar{
+        background-color:#1C2331;
+    }
+    .juke-logo{
+        width: 6%;
+    }
+    .consult-image{
+        width: 40%;
+    }
+    .consultant-text{
+       text-align: center;
+       width: 100%;
+    }
+    .consult-name-image{
+        padding-top: 20px!important;
+        padding-left: 20px!important;
+    }
+    .card{
+        min-height: 465px!important;
+        margin-top: 15px;
+    }
+    .card-img-top{
+        width: 60%!important;
+    }
+    .website-subheading{
+        display: block;
+        margin-top: -15px;
+        margin-bottom: 10px;
+    }
+    .card-websites{
+        min-height: 330px!important;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #company-name{
+        font-size: 2.3rem;
+    }
+    #company-name{
+        padding-top: 40%;
+    }
+    #company-tec{
+        padding-top: 50%;
+    }
+    #company-tec{
+        font-size: 1.8rem;
+    }
+    .juke-logo{
+        width: 11%;
+    }
+    .python-logo{
+        width: 40%;
+    }
+    .android-logo{
+        width: 20%;
+    } 
+    .consultant-row{
+    box-shadow: 0px 0px 0px 0px;
+    }
+    .consult-image{
+        width: 50%;
+    }
+    .consult-name-image{
+        padding-top: 10px!important;
+    }
+    .hidden-in-desktop{
+        display: block;
+    }
+    .card-img-top{
+        width: 50%!important;
+    }
+    .card{
+        width: 80%;
+        margin-left: 40px;
+        min-height: 250px!important;
+    }
+    .card-body{
+        text-align: center;
+    }
+}    
+   
+
+@media only screen and (max-width: 375px){
+    #company-name{
+        font-size: 2.1rem;
+    }
+    #company-tec{
+        font-size: 1.5rem;
+    }
+}    
+
+
+@media only screen and (max-width: 320px){
+    #company-name{
+        font-size: 1.8rem;
+    }
+    #company-tec{
+        font-size: 1.2rem;   
+    }
+    .juke-logo{
+        width: 13%;
+    }
+    .python-logo{
+        width: 45%;
+    }
+    .android-logo{
+        margin-top: 4px;
+        width: 22%;
+    }
+    .consult-image{
+        width: 60%;
+    }
+    .consultant-text{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .card{
+        width: 90%;
+        margin-left: 15px;
+        min-height: 250px!important;
+    }
+    .copyright-footer{
+       font-size: 0.9rem;
+    }
+}
